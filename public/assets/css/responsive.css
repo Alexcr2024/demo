@@ -224,7 +224,7 @@
 	width: 400px;
 }
 .banner-area-two .banner-img.text-center {
-	text-align: right !important;
+	text-align: center !important;
 }
 .banner-area-two .banner-img img {
 	max-width: 380px;
@@ -1742,9 +1742,7 @@
 .services-bg-two {
 	padding: 100px 0 70px;
 }
-.overview-area {
-	padding: 100px 0;
-}
+
 .choose-bg {
 	padding: 100px 0;
 }
@@ -2370,6 +2368,18 @@
 .error-area {
     padding: 100px 0;
 }
+
+}
+@media (min-width: 767.98px) {
+	.overview-area {
+		padding: 100px 0;
+	}
+	.pb-120 {
+		padding-bottom: 120px;
+	}
+	.pt-120 {
+		padding-top: 120px;
+	}
 
 }
 

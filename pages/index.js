@@ -1,4 +1,3 @@
-
 import Banner from "@/components/sections/home1/Banner";
 import Overview from "@/components/sections/home1/Overview";
 import Link from "next/link";
@@ -105,10 +104,7 @@ export default function Home1() {
                   </div>
                   <div className="services-thumb">
                     <img src="/assets/pdf.png" alt="" />
-                    <Link
-                      href="/pdf"
-                      className="btn transparent-btn"
-                    >
+                    <Link href="/pdf" className="btn transparent-btn">
                       Demo Presentación
                     </Link>
                   </div>
@@ -119,7 +115,18 @@ export default function Home1() {
         </div>
       </section>
       <Overview />
-    
+      <footer class="bg-white text-dark py-4">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+              <p class="mb-0">Usa +1 713 347 8379 / CR. +506 88516629</p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+              <p class="mb-0">Vacos@example.com</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

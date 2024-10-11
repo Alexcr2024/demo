@@ -8,8 +8,8 @@ export default function Banner() {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="banner-content-two">
-                                <span className="sub-title" data-aos="fade-up" data-aos-delay={0}>Moderniza tu stack, reduce costos,</span>
-                                <h2 className="title" data-aos="fade-up" data-aos-delay={300}>Y transforma tu negocio hoy</h2>
+                                {/* <span className="sub-title" data-aos="fade-up" data-aos-delay={0}>Moderniza tu stack, reduce costos,</span> */}
+                                <h2 className="title" data-aos="fade-up" data-aos-delay={300}>Transforma tu negocio hoy</h2>
                                 <p data-aos="fade-up" data-aos-delay={500}>Descubre cómo nuestras soluciones pueden ayudarte a ser más competitivo, a optimizar tu operación y a aprovechar las oportunidades del futuro digital.</p>
                                 <div className="banner-btn">
                                    
@@ -18,7 +18,7 @@ export default function Banner() {
                         </div>
                         <div className="col-lg-6">
                             <div className="banner-img text-center">
-                                <img src="/assets/img/images/estimate_img.png" alt="" data-aos="fade-left" data-aos-delay={400} />
+                                <img src="/assets/perfil.png" alt="" data-aos="fade-left" data-aos-delay={400} />
                             </div>
                         </div>
                     </div>

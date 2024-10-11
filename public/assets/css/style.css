@@ -230,7 +230,6 @@ p {
     font-weight: var(--tg-body-font-weight);
     line-height: var(--tg-body-line-height);
     color: var(--tg-paragraph-color);
-    text-transform: var(--tg-text-transform);
     margin-bottom: 15px;
 }
 
@@ -1805,6 +1804,9 @@ label {
     z-index: -2;
     position: absolute;
     border-radius: 50%;
+}
+.banner-img img{
+  height: 528px;
 }
 
 .banner-img-three {
@@ -10199,3 +10201,18 @@ label {
         width: 50%;
     }
 }
+.spinner {
+    border: 3px solid rgba(235, 231, 231, 0.1);
+    border-left-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

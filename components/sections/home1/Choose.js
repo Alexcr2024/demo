@@ -15,7 +15,7 @@ export default function Choose() {
                                     <h4 className="title tg-element-title">Conoce nuestra app demo </h4>
                                 </div>
                                   <p>explora todas sus funcionalidades! Descubre cómo nuestra solución puede mejorar tu experiencia de manera fácil y rápida.</p>
-                                <VideoPopup style={2} />
+                                <VideoPopup style={1} />
                             </div>
                         </div>
                         <div className="col-lg-6">

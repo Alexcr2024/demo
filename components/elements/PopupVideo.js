@@ -7,7 +7,7 @@ export default function VideoPopup({ style }) {
     return (
         <>
             {style === 1 &&
-                <a onClick={() => setOpen(true)} className="play-btn popup-video" data-aos="fade-left" data-aos-delay={700}><i className="fas fa-play" /> <span>Watch The Video</span></a>
+                <a onClick={() => setOpen(true)} className="play-btn popup-video" data-aos="fade-left" data-aos-delay={400}><i className="fas fa-play" /> <span>App  Video</span></a>
             }
             {style === 2 &&
                 <a onClick={() => setOpen(true)} className="play-btn popup-video"><i className="fas fa-play" />Watch Video</a>
@@ -15,8 +15,17 @@ export default function VideoPopup({ style }) {
             {style === 3 &&
                 <a onClick={() => setOpen(true)} className="play-btn popup-video"><i className="fas fa-play" /></a>
             }
-
-            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="7e90gBu4pas" onClose={() => setOpen(false)} />
+          <ModalVideo
+                isOpen={isOpen}
+                onClose={() => setOpen(false)}
+                ariaHideApp={false}
+                channel="custom"
+            >
+                <video width="100%" height="auto" autoPlay  controls onEnded={() => setOpen(false)}>
+                    <source src="VASCO-VIDEO.mp4" type="video/mp4" />
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </ModalVideo>
         </>
     )
 }
