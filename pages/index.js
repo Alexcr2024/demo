@@ -1,6 +1,5 @@
 
 import Banner from "@/components/sections/home1/Banner";
-import Choose from "@/components/sections/home1/Choose";
 import Overview from "@/components/sections/home1/Overview";
 import Link from "next/link";
 
