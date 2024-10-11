@@ -1648,6 +1648,16 @@
 	left: 21%;
 	bottom: 37%;
 }
+.banner-shape-left img:nth-child(3) {
+	display: none;
+}
+.banner-shape-left img:nth-child(2) {
+	left: 9%;
+}
+.banner-shape-left img:nth-child(1) {
+	left: 21%;
+	bottom: 37%;
+}
 .banner-content-two .title {
 	font-size: 42px;
 }
