@@ -16,20 +16,20 @@ export default function Choose() {
                                 <div className="section-title-two white-title mb-20 tg-heading-subheading animation-style3">
                                     <h4 className="title tg-element-title">Conoce nuestra App demo </h4>
                                 </div>
-                                  <p>Explora todas sus funcionalidades! Descubre cómo nuestra solución puede mejorar tu experiencia de manera fácil y rápida.</p>
+                                  <p>¡Explora todas sus funcionalidades! Descubre cómo nuestra solución puede mejorar tu experiencia de manera fácil y rápida.</p>
                                 <VideoPopup style={1} />
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="skill-wrap wow fadeInRight" data-wow-delay=".2s">
-                               <img src="/assets/demoMovil.png"  />
+                              <MainSlider />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
              
-            <MainSlider />
+        
         </>
     )
 }

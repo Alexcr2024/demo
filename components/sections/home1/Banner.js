@@ -10,7 +10,7 @@ export default function Banner() {
                             <div className="banner-content-two">
                                 {/* <span className="sub-title" data-aos="fade-up" data-aos-delay={0}>Moderniza tu stack, reduce costos,</span> */}
                                 <h1 className="title" data-aos="fade-up" data-aos-delay={300}>Transforma tu negocio hoy</h1>
-                                <p data-aos="fade-up" data-aos-delay={500}>Descubre cómo nuestras soluciones pueden ayudarte a ser más competitivo, a optimizar tu operación y a aprovechar las oportunidades del futuro digital.</p>
+                                <p data-aos="fade-up" data-aos-delay={500}>Descubre cómo nuestras soluciones pueden ayudarte a ser más competitivo, optimizar tus operaciones y aprovechar las oportunidades del futuro digital.</p>
                                 <div className="banner-btn">
                                    
                                 </div>
@@ -28,10 +28,13 @@ export default function Banner() {
                 <div className="banner-shape-wrap">
                 <img src="/assets/img/banner/h2_banner_shape01.png" alt="" />
                 <img src="/assets/img/banner/h2_banner_shape02.png" alt="" />
-                </div>
-                <div className="banner-shape-left">
                 <img src="/assets/img/images/h3_about_img02.jpg" alt="" />
+                  <h1 className="machine">AI</h1>
+                  <h1 className="web"> Web Design</h1>
+                  <h1 className="ui"> Machine Learning</h1>
+                  <h1 className="ai">UI/UX</h1>
                 </div>
+                
             </section>
         </>
     )

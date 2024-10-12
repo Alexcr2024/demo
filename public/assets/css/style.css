@@ -1704,13 +1704,78 @@ label {
 }
 
 .banner-shape-wrap img:nth-child(3) {
-    right: 26%;
-    bottom: 0;
+    right: 7%;
+    top: 34%;
+    width: 149px;
     z-index: -2;
+    animation: alltuchtopdown 8s infinite linear;
 }
 .banner-shape-left img {
     position: absolute;
     z-index: -1;
+}
+.banner-shape-wrap h1{
+	right: -12%;
+	width: 166px;
+	top: 52%;
+ }
+ .machine{
+  display: none;
+
+ }
+ .web{
+  display: none;
+
+ }
+ .ui{
+  display: none;
+
+ }
+ .ai{
+  display: none;
+
+ }
+
+
+@media (min-width: 768px) {
+    .machine{
+        display: block;
+        position: absolute;
+        right: 24%!important;
+        font-size: 20px;
+        width: 182px;
+        top: 16%!important;
+        animation: float-bob-x 4s infinite linear;
+     }
+    .web{
+        display: block;
+        position: absolute;
+        right: 5%!important;
+        font-size: 20px;
+        width: 182px;
+        top: 16%!important;
+        animation: float-bob-x 4s infinite linear;
+     }
+     .ui{
+        display: block;
+        position: absolute;
+        right: 5%!important;
+        font-size: 20px;
+        width: 182px;
+        top: 80%!important;
+        animation: float-bob-x 4s infinite linear; 
+        
+     }
+     .ai{
+        display: block;
+        position: absolute;
+        right: 25%!important;
+        font-size: 20px;
+        width: 182px;
+        top: 40%!important;
+        animation: float-bob-x 4s infinite linear; 
+
+     }
 }
 
 .banner-shape-left img:nth-child(1) {
@@ -1731,6 +1796,11 @@ label {
     z-index: -2;
 }
 
+.prueba{
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes float-bob-x {
     0% {
         transform: translateX(-30px);
@@ -1745,6 +1815,13 @@ label {
     }
 }
 
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según sea necesario */
+  }
+  
 /* banner-three */
 .banner-area-three {
     padding: 200px 0 60px;

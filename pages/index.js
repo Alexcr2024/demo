@@ -39,7 +39,7 @@ export default function Home1() {
                       href="https://demo.vascotechnology.com/"
                       className="btn transparent-btn"
                     >
-                      Demo Web
+                       Web
                     </Link>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export default function Home1() {
                   <div className="services-thumb">
                     <img src="/assets/demoMovil.png" alt="" />
                     <Link href="/mobile" className="btn transparent-btn">
-                      Demo APP
+                       APP
                     </Link>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function Home1() {
                   <div className="services-thumb">
                     <img src="/assets/pdf.png" alt="" />
                     <Link href="/pdf" className="btn transparent-btn">
-                      Demo Presentación
+                      Presentación
                     </Link>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function Home1() {
       <footer class="bg-white text-dark py-4">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <div class="col-md-6 gap-4 text-center text-md-left mb-3 mb-md-0">
               <p class="mb-0">
                 {" "}
                 <span>
@@ -129,7 +129,7 @@ export default function Home1() {
                     alt="usa"
                   />{" "}
                 </span>{" "}
-                +1 713 347 8379 /{" "}
+                &nbsp;+1 713 347 8379&nbsp;&nbsp;
                 <span>
                   {" "}
                   <img
@@ -142,7 +142,7 @@ export default function Home1() {
                 +506 88516629
               </p>
             </div>
-            <div class="col-md-6 text-center text-md-right">
+            <div class="col-md-6 text-center ">
               <p class="mb-0"> <span><img width="20" height="20" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="new-post--v1"/></span> info@vascotechnology.com</p>
             </div>
           </div>
