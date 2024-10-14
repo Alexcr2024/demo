@@ -3,6 +3,16 @@ import Slider from "react-slick";
 
 const imagens = [
   '/assets/demoMovil.png',
+  '/img/1.png',
+  '/img/2.png',
+  '/img/3.png',
+  '/img/4.png',
+  '/img/5.png',
+  '/img/6.png',
+  '/img/7.png',
+  '/img/8.png',
+  '/img/9.png',
+  '/img/10.png',
 ];
 
 function NextArrow(props) {
@@ -57,22 +67,10 @@ export default function MainSlider() {
         {imagens.map((item, index) => (
           <div
             key={index}
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '240px',
-              width: '100%',
-              maxWidth: '100%', 
-            }}
           >
             <img
               src={item}
               alt=""
-              style={{
-                maxHeight: '240px',
-                width: '100%',
-              }}
             />
           </div>
         ))}

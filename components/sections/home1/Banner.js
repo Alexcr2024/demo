@@ -18,14 +18,22 @@ export default function Banner() {
                         </div>
                         
                         <div className="col-lg-6">
-                            <div className="banner-img text-center">
+                            <div className="banner-img relative ">
+                                <img src="/assets/img/banner/h2_banner_shape01.png" alt="" />
+                                <img src="/assets/img/banner/h2_banner_shape02.png" alt="" />
                                 <img src="/assets/perfil.png" alt="" data-aos="fade-left" data-aos-delay={400} />
+                                <img src="/assets/img/images/h3_about_img02.jpg" alt="" />
+                                <h1 className="machine">AI</h1>
+                                <h1 className="web"> Web Design</h1>
+                                <h1 className="ui"> Machine Learning</h1>
+                                <h1 className="ai">UI/UX</h1>
                             </div>
+
                             
                         </div>
                     </div>
                 </div>
-                <div className="banner-shape-wrap">
+                {/* <div className="banner-shape-wrap">
                 <img src="/assets/img/banner/h2_banner_shape01.png" alt="" />
                 <img src="/assets/img/banner/h2_banner_shape02.png" alt="" />
                 <img src="/assets/img/images/h3_about_img02.jpg" alt="" />
@@ -33,7 +41,7 @@ export default function Banner() {
                   <h1 className="web"> Web Design</h1>
                   <h1 className="ui"> Machine Learning</h1>
                   <h1 className="ai">UI/UX</h1>
-                </div>
+                </div> */}
                 
             </section>
         </>

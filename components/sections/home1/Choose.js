@@ -1,12 +1,14 @@
 import VideoPopup from "@/components/elements/PopupVideo"
 import MainSlider from "@/components/slider/Slider"
 
+
 export default function Choose() {
     return (
         <>
+            
             <section className="choose-area jarallax choose-bg" data-background="/assets/img/bg/choose_bg.jpg">
+            
                 <div className="choose-shape">
-
                     <img src="/assets/img/images/choose_shape.png" alt="" data-aos="fade-right" data-aos-delay={0} />
                 </div>
                 <div className="container">

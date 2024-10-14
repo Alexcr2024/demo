@@ -1,10 +1,15 @@
+import Menu from "@/components/elements/navegacion";
 import Banner from "@/components/sections/home1/Banner";
 import Overview from "@/components/sections/home1/Overview";
 import Link from "next/link";
 
+
 export default function Home1() {
+
+
   return (
     <>
+     <Menu moblie={true} />
       <Banner />
       <section className="features-area-two pt-80">
         <div className="container mt-3">
@@ -39,7 +44,7 @@ export default function Home1() {
                       href="https://demo.vascotechnology.com/"
                       className="btn transparent-btn"
                     >
-                       Web
+                      Web
                     </Link>
                   </div>
                 </div>
@@ -72,7 +77,7 @@ export default function Home1() {
                   <div className="services-thumb">
                     <img src="/assets/demoMovil.png" alt="" />
                     <Link href="/mobile" className="btn transparent-btn">
-                       APP
+                      APP
                     </Link>
                   </div>
                 </div>
@@ -143,7 +148,18 @@ export default function Home1() {
               </p>
             </div>
             <div class="col-md-6 text-center ">
-              <p class="mb-0"> <span><img width="20" height="20" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="new-post--v1"/></span> info@vascotechnology.com</p>
+              <p class="mb-0">
+                {" "}
+                <span>
+                  <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios/50/new-post--v1.png"
+                    alt="new-post--v1"
+                  />
+                </span>{" "}
+                info@vascotechnology.com
+              </p>
             </div>
           </div>
         </div>
