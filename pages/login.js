@@ -17,8 +17,8 @@ const LoginForm = () => {
     setLoading(true); 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        setLoading(false); // Ocultar spinner al finalizar
-        push('/', { replace: true });
+          console.log('hola')
+        push('/');
       })
       .catch((error) => {
         setLoading(false); 

@@ -134,7 +134,7 @@ export default function Home1() {
                     alt="usa"
                   />{" "}
                 </span>{" "}
-                &nbsp;+1 713 347 8379&nbsp;&nbsp;
+                &nbsp;+1 640 530 12&nbsp;&nbsp;
                 <span>
                   {" "}
                   <img
@@ -144,7 +144,7 @@ export default function Home1() {
                     alt="costa-rica"
                   />{" "}
                 </span>{" "}
-                +506 88516629
+                +506 72660546
               </p>
             </div>
             <div class="col-md-6 text-center ">
@@ -165,7 +165,7 @@ export default function Home1() {
         </div>
       </footer>
       <a
-        href="https://wa.me/+50688516629"
+        href="https://wa.me/+50672660546"
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
