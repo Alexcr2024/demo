@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { auth } from '@/firebase';
 import initTranslations from "@/config/initTranslations";
 import {useTranslation} from "react-i18next";
