@@ -30,9 +30,9 @@ function MyApp({ Component, pageProps }) {
             if (user) {
                 localStorage.setItem("accessToken", user.accessToken);
                 const accessToken = localStorage.getItem("accessToken");
-                   if (accessToken) {
-                    router.push("/");
-                 } 
+                //    if (accessToken) {
+                //     router.push("/");
+                //  } 
              
             } else {
                 router.push("/login");

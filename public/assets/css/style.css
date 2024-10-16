@@ -10434,3 +10434,35 @@ label {
     }
   }
 
+  .sliderContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Para evitar el desbordamiento */
+  }
+  
+  .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el wrapper tome el alto completo */
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Animación suave al hacer zoom */
+  }
+  
+  .zoomed {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
+    cursor: zoom-in; /* Cambia el cursor para indicar que se puede hacer zoom */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+  }

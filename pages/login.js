@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from 'next/router';
@@ -14,6 +15,7 @@ export function getStaticProps(context) {
 }
 
 const LoginForm = (props) => {
+ 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(false);
@@ -24,6 +26,7 @@ const LoginForm = (props) => {
 
   const { i18n } = initTranslations({ defaultLocale: props.locale });
   const { t } = useTranslation();
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
