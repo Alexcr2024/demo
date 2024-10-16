@@ -1,6 +1,9 @@
-
+import { useTranslation } from "react-i18next";
 
 export default function Banner() {
+
+    const { t } = useTranslation();
+
     return (
         <>
             <section className="banner-area-two " data-background="/assets/img/banner/h2_banner_bg.jpg">
@@ -9,8 +12,12 @@ export default function Banner() {
                         <div className="col-lg-6">
                             <div className="banner-content-two">
                                 {/* <span className="sub-title" data-aos="fade-up" data-aos-delay={0}>Moderniza tu stack, reduce costos,</span> */}
-                                <h1 className="title" data-aos="fade-up" data-aos-delay={300}>Transforma tu negocio hoy</h1>
-                                <p data-aos="fade-up" data-aos-delay={500}>Descubre cómo nuestras soluciones pueden ayudarte a ser más competitivo, optimizar tus operaciones y aprovechar las oportunidades del futuro digital.</p>
+                                <h1 className="title" data-aos="fade-up" data-aos-delay={300}>
+                                    {t("Leverage your business today")}
+                                </h1>
+                                <p data-aos="fade-up" data-aos-delay={500}>
+                                    {t("Discover how our solutions can help you be more competitive, optimize your operations and take advantage of the opportunities of the digital future.")}
+                                </p>
                                 <div className="banner-btn">
                                    
                                 </div>

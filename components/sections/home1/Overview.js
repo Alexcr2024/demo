@@ -1,6 +1,9 @@
-import CounterUp from "@/components/elements/CounterUp";
+import {useTranslation} from "react-i18next";
 
 export default function Overview() {
+
+  const {t} = useTranslation();
+
   return (
     <>
       <section className="overview-area pt-120 pb-120">
@@ -30,33 +33,31 @@ export default function Overview() {
               <div className="overview-content">
                 <div className="section-title-two mb-20 tg-heading-subheading animation-style3">
                   <span className="sub-title"></span>
-                  <h2 className="title tg-element-title">Impacto Global</h2>
+                  <h2 className="title tg-element-title">
+                    {t("Global Impact")}
+                  </h2>
                 </div>
                 <p className="info-one">
-                  Con clientes en diversos sectores y ubicaciones geográficas,
-                  hemos logrado impactar empresas en todo el mundo.
+                  {t("With clients in various sectors and geographical locations, we have managed to impact companies around the world.")}
                 </p>
                 <p className="info-two">
-                  Nuestro enfoque flexible y orientado a resultados nos ha
-                  permitido convertirnos en un socio estratégico para empresas
-                  que buscan crecer y evolucionar en la era digital.
+                  {t("Our flexible and results-oriented approach has allowed us to become a strategic partner for companies looking to grow and evolve in the digital age.")}
                 </p>
-                <h4>Por Qué Elegir Vasco Technologies</h4>
+                <h4>
+                    {t("Why Choose Vasco Technologies")}
+                </h4>
                 <ul>
                   <li style={{ marginBottom: "10px" }}>
-                    <span>Innovación constante:</span> Incorporamos las últimas
-                    tecnologías para garantizar que nuestras soluciones estén
-                    siempre a la vanguardia.
+                    <span>{t('Constant Innovation')}: </span>
+                    {t("We incorporate the latest technologies to ensure that our solutions are always at the forefront.")}
                   </li>
                   <li style={{ marginBottom: "10px" }}>
-                    <span>Soporte dedicado:</span> Brindamos un soporte integral
-                    que cubre desde la implementación hasta el mantenimiento de
-                    nuestras soluciones.
+                    <span>{t("Dedicated Support")}: </span>
+                    {t("We provide comprehensive support that covers everything from implementation to maintenance of our solutions.")}
                   </li>
                   <li>
-                    <span>Escalabilidad:</span> Nuestras plataformas están
-                    diseñadas para crecer junto con tu negocio, facilitando su
-                    expansión en nuevos mercados.
+                    <span>{t("Scalability")}: </span>
+                    {t("Our platforms are designed to grow with your business, facilitating its expansion into new markets.")}
                   </li>
                 </ul>
                 {/* <div className="content-bottom">

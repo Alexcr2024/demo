@@ -2,8 +2,18 @@ import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from 'next/router';
 import { auth } from '@/firebase';
+import initTranslations from "@/config/initTranslations";
+import {useTranslation} from "react-i18next";
 
-const LoginForm = () => {
+export function getStaticProps(context) {
+  return {
+    props: {
+      locale: context.locale,
+    },
+  };
+}
+
+const LoginForm = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(false);
@@ -11,6 +21,9 @@ const LoginForm = () => {
   const [status, setStatus] = useState(null); 
   const [loading, setLoading] = useState(false); // Nuevo estado para controlar el spinner
   const { push } = useRouter();
+
+  const { i18n } = initTranslations({ defaultLocale: props.locale });
+  const { t } = useTranslation();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,9 +44,11 @@ const LoginForm = () => {
   return (
     <section className="login-form-container">
       <aside className="login-form-container__image-container">
-        <h1 className="login-form-container__title1">Bienvenido(a) a la sesión de demostración de Vasco Technologies</h1>
+        <h1 className="login-form-container__title1">
+          {t("Welcome to the Vasco Technologies demo session")}
+        </h1>
         <span className="login-form-container__subtitle1">
-          Estamos encantados de tenerlo(a) con nosotros hoy mientras exploramos cómo nuestras soluciones tecnológicas están transformando el sector de la salud y el comercio minorista. Durante esta sesión, le mostraremos las funcionalidades clave de nuestras plataformas y cómo pueden ayudar a su organización a optimizar procesos, mejorar la experiencia del cliente y aumentar la eficiencia operativa.
+          {t("We are delighted to have you with us today as we explore how our technological solutions are transforming the health and retail sectors. During this session, we will show you the key features of our platforms and how they can help your organization optimize processes, improve the customer experience, and increase operational efficiency.")}
         </span>
       </aside>
 
@@ -47,7 +62,7 @@ const LoginForm = () => {
         <div className="form-container">
           <form onSubmit={handleSubmit} className="form">
             <div className="form__group">
-              <label htmlFor="email" className="form__label">E-Mail Address</label>
+              <label htmlFor="email" className="form__label">{t("E-Mail Address")}</label>
               <input
                 type="email"
                 name="email"
@@ -62,7 +77,9 @@ const LoginForm = () => {
             </div>
 
             <div className="form__group">
-              <label htmlFor="password" className="form__label">Password</label>
+              <label htmlFor="password" className="form__label">
+                {t("Password")}
+              </label>
               <input
                 type="password"
                 name="password"
@@ -85,7 +102,9 @@ const LoginForm = () => {
                 checked={remember}
                 onChange={() => setRemember(!remember)}
               />
-              <label htmlFor="remember" className="form__checkbox-label">Remember Me</label>
+              <label htmlFor="remember" className="form__checkbox-label">
+                {t("Remember Me")}
+              </label>
             </div>
 
             <div className="form__group">
@@ -93,7 +112,7 @@ const LoginForm = () => {
                 {loading ? (
                   <div className="spinner"></div> 
                 ) : (
-                  "Login"
+                    t("Login")
                 )}
               </button>
             </div>

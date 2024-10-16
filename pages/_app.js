@@ -19,7 +19,6 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useRouter, redirect } from 'next/navigation'
 import { auth } from "@/firebase";
 
-
 function MyApp({ Component, pageProps }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(false);

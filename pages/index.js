@@ -2,10 +2,20 @@ import Menu from "@/components/elements/navegacion";
 import Banner from "@/components/sections/home1/Banner";
 import Overview from "@/components/sections/home1/Overview";
 import Link from "next/link";
+import initTranslations from "@/config/initTranslations";
+import {useTranslation} from "react-i18next";
 
+export function getStaticProps(context) {
+  return {
+    props: {
+      locale: context.locale,
+    },
+  };
+}
 
-export default function Home1() {
-
+export default function Home1(props) {
+  const { i18n } = initTranslations({ defaultLocale: props.locale });
+  const { t } = useTranslation();
 
   return (
     <>
@@ -36,13 +46,16 @@ export default function Home1() {
                         />
                       </svg>
                     </div>
-                    <h2 className="title">Demo Web</h2>
+                    <h2 className="title">
+                      {t('Web Demo')}
+                    </h2>
                   </div>
                   <div className="services-thumb">
                     <img src="/assets/demoWeb.png" alt="" />
                     <Link
                       href="https://demo.vascotechnology.com/"
                       className="btn transparent-btn"
+                      target="_blank"
                     >
                       Web
                     </Link>
@@ -72,11 +85,13 @@ export default function Home1() {
                         />
                       </svg>
                     </div>
-                    <h2 className="title">Demo APP</h2>
+                    <h2 className="title">
+                        {t('Mobile Demo')}
+                    </h2>
                   </div>
                   <div className="services-thumb">
                     <img src="/assets/demoMovil.png" alt="" />
-                    <Link href="/mobile" className="btn transparent-btn">
+                    <Link href="/mobile" className="btn transparent-btn" locale={props.locale}>
                       APP
                     </Link>
                   </div>
@@ -105,11 +120,13 @@ export default function Home1() {
                         />
                       </svg>
                     </div>
-                    <h2 className="title">Demo Presentación</h2>
+                    <h2 className="title">
+                        {t('Presentation Demo')}
+                    </h2>
                   </div>
                   <div className="services-thumb">
                     <img src="/assets/pdf.png" alt="" />
-                    <Link href="/pdf" className="btn transparent-btn">
+                    <Link href="/pdf" className="btn transparent-btn" locale={props.locale}>
                       Presentación
                     </Link>
                   </div>

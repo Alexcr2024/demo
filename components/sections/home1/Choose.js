@@ -1,8 +1,11 @@
 import VideoPopup from "@/components/elements/PopupVideo"
 import MainSlider from "@/components/slider/Slider"
-
+import {useTranslation} from "react-i18next";
 
 export default function Choose() {
+
+    const {t} = useTranslation();
+
     return (
         <>
             
@@ -16,9 +19,13 @@ export default function Choose() {
                         <div className="col-lg-6">
                             <div className="choose-content">
                                 <div className="section-title-two white-title mb-20 tg-heading-subheading animation-style3">
-                                    <h4 className="title tg-element-title">Conoce nuestra App demo </h4>
+                                    <h4 className="title tg-element-title">
+                                        {t("Meet our app demo")}
+                                    </h4>
                                 </div>
-                                  <p>¡Explora todas sus funcionalidades! Descubre cómo nuestra solución puede mejorar tu experiencia de manera fácil y rápida.</p>
+                                  <p>
+                                      {t("Explore all its features! Discover how our solution can improve your experience easily and quickly.")}
+                                  </p>
                                 <VideoPopup style={1} />
                             </div>
                         </div>
