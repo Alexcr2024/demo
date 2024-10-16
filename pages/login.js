@@ -34,7 +34,7 @@ const LoginForm = (props) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
 
-        push('/',{locale: props.locale});
+        push('/','/',{locale: props.locale});
       })
       .catch((error) => {
         setLoading(false); 
