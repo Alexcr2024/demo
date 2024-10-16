@@ -33,8 +33,8 @@ const LoginForm = (props) => {
     setLoading(true); 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-          console.log('hola')
-        push('/');
+
+        push('/',{locale: props.locale});
       })
       .catch((error) => {
         setLoading(false); 
