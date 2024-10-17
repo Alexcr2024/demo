@@ -4,6 +4,7 @@ import {Link} from '@/i18n/routing';
 import Menu from '@/components/Menu';
 import Banner from '@/components/Banner';
 import Overview from '@/components/Overview';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
  
 export default function HomePage() {
   const t = useTranslations();
@@ -41,7 +42,7 @@ export default function HomePage() {
                   </h2>
                 </div>
                 <div className="services-thumb">
-                  <img src="/demoWeb.png" alt="" />
+                  <LazyLoadImage src="/demoWeb.png" alt="" />
                   <Link
                     href="https://demo.vascotechnology.com/"
                     className="btn transparent-btn"
@@ -80,7 +81,7 @@ export default function HomePage() {
                   </h2>
                 </div>
                 <div className="services-thumb">
-                  <img src="/demoMovil.png" alt="" />
+                  <LazyLoadImage src="/demoMovil.png" alt="" />
                   <Link href="/mobile" className="btn transparent-btn">
                     APP
                   </Link>
@@ -115,7 +116,7 @@ export default function HomePage() {
                   </h2>
                 </div>
                 <div className="services-thumb">
-                  <img src="/pdf.png" alt="" />
+                  <LazyLoadImage src="/pdf.png" alt="" />
                   <Link href="/pdf"    target="_blank" className="btn transparent-btn" >
                     Presentación
                   </Link>
@@ -134,7 +135,7 @@ export default function HomePage() {
             <p class="mb-0">
               {" "}
               <span>
-                <img
+                <LazyLoadImage
                   width="20"
                   height="20"
                   src="https://img.icons8.com/color/48/usa.png"
@@ -144,7 +145,7 @@ export default function HomePage() {
               &nbsp;+1 640 530 12&nbsp;&nbsp;
               <span>
                 {" "}
-                <img
+                <LazyLoadImage
                   width="20"
                   height="20"
                   src="https://img.icons8.com/color/48/costa-rica.png"
@@ -158,7 +159,7 @@ export default function HomePage() {
             <p class="mb-0">
               {" "}
               <span>
-                <img
+                <LazyLoadImage
                   width="20"
                   height="20"
                   src="https://img.icons8.com/ios/50/new-post--v1.png"

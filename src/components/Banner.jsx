@@ -41,15 +41,7 @@ export default function Banner() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="banner-shape-wrap">
-                <img src="/assets/img/banner/h2_banner_shape01.png" alt="" />
-                <img src="/assets/img/banner/h2_banner_shape02.png" alt="" />
-                <img src="/assets/img/images/h3_about_img02.jpg" alt="" />
-                  <h1 className="machine">AI</h1>
-                  <h1 className="web"> Web Design</h1>
-                  <h1 className="ui"> Machine Learning</h1>
-                  <h1 className="ai">UI/UX</h1>
-                </div> */}
+               clea
                 
             </section>
         </>

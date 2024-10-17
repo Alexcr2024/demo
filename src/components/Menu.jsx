@@ -5,6 +5,7 @@ import { auth } from "../../firebase";
 import { useParams, useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import {Link} from '@/i18n/routing';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Menu() {
   const params = useParams();
@@ -36,13 +37,13 @@ export default function Menu() {
             <>
               <li>
                 <Link href="es" onClick={() => handleLanguageChange('es')}>
-                  <img width="20" height="20" src="https://img.icons8.com/color/48/spain.png" alt="spain" />
+                  <LazyLoadImage width="20" height="20" src="https://img.icons8.com/color/48/spain.png" alt="spain" />
                   Español
                 </Link>
               </li>
               <li>
                 <Link href="en" onClick={() => handleLanguageChange('en')}>
-                  <img width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
+                  <LazyLoadImage width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
                   English
                 </Link>
               </li>
@@ -51,13 +52,13 @@ export default function Menu() {
             <>
               <li>
                 <Link href="en" onClick={() => handleLanguageChange('en')}>
-                  <img width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
+                  <LazyLoadImage width="20" height="20" src="https://img.icons8.com/color/48/usa.png" alt="usa" />
                   English
                 </Link>
               </li>
               <li>
                 <Link href="es" onClick={() => handleLanguageChange('es')}>
-                  <img width="20" height="20" src="https://img.icons8.com/color/48/spain.png" alt="spain" />
+                  <LazyLoadImage width="20" height="20" src="https://img.icons8.com/color/48/spain.png" alt="spain" />
                   Español
                 </Link>
               </li>

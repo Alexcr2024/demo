@@ -2,6 +2,7 @@
 import VideoPopup from "@/components/PopupVideo";
 import MainSlider from "@/components/Slider";
 import { useTranslations } from "next-intl";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 export default function Choose() {
@@ -14,7 +15,7 @@ export default function Choose() {
             <section className="choose-area jarallax choose-bg" data-background="/assets/img/bg/choose_bg.jpg">
             
                 <div className="choose-shape">
-                    <img src="/assets/img/images/choose_shape.png" alt="" data-aos="fade-right" data-aos-delay={0} />
+                    <LazyLoadImage src="/assets/img/images/choose_shape.png" alt="" data-aos="fade-right" data-aos-delay={0} />
                 </div>
                 <div className="container">
                     <div className="row align-items-center">

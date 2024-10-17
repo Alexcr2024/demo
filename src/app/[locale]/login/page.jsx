@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import React,{ useState } from "react";
 import { auth } from "../../../../firebase";
 import Cookies from 'js-cookie'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const LoginForm = () => {
@@ -49,7 +50,7 @@ const LoginForm = () => {
         </aside>
   
         <div className="login-form-container__form-group-container">
-          <img src={PUBLIC_ASSET.login} alt="Farmalink Logo" height="100px" width="200px" />
+          <LazyLoadImage src={PUBLIC_ASSET.login} alt="Farmalink Logo" height="100px" width="200px" />
   
           <div className="alert-container">
             {status && <div className="alert alert-danger">{status}</div>}

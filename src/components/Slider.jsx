@@ -5,6 +5,7 @@ import ModalVideo from 'react-modal-video'
 import "../../node_modules/react-modal-video/css/modal-video.css"
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 
@@ -104,7 +105,7 @@ export default function MainSlider() {
       <Slider {...settings}>
         {imagens.map((item, index) => (
           <div key={index}>
-            <img src={item} alt="" />
+            <LazyLoadImage src={item} alt="" />
           </div>
         ))}
 

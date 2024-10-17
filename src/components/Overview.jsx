@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Overview() {
 
@@ -17,13 +18,13 @@ export default function Overview() {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-10">
               <div className="overview-img-wrap">
-                <img src="/img/images/overview_img01.jpg" alt="" />
-                <img
+                <LazyLoadImage src="/img/images/overview_img01.jpg" alt="" />
+                <LazyLoadImage
                   src="/img/images/overview_img02.jpg"
                   alt=""
                   data-parallax='{"x" : 50 }'
                 />
-                <img src="/img/images/overview_img_shape.png" alt="" />
+                <LazyLoadImage src="/img/images/overview_img_shape.png" alt="" />
                 <div className="icon">
                   <i className="flaticon-report-1" />
                 </div>
