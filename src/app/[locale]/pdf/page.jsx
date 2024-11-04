@@ -22,14 +22,14 @@ export default function PdfViewer() {
         <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
             {/* Incrustar el PDF */}
             <iframe
-                src="/demo-2.pdf"
+                src="https://farmacdn.nyc3.cdn.digitaloceanspaces.com/demo-2.pdf"
                 width="100%"
                 height="100%"
                 style={{ border: 'none' }}
             />
             {/* Enlace para descargar el PDF */}
             <a
-                href="/demo-2.pdf"
+                href="https://farmacdn.nyc3.cdn.digitaloceanspaces.com/demo-2.pdf"
                 id="enlaceDescargarPdf"
                 download="demo.pdf"
                 style={{

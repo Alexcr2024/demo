@@ -41,7 +41,6 @@ export default function Banner() {
                         </div>
                     </div>
                 </div>
-               clea
                 
             </section>
         </>
