@@ -20,7 +20,7 @@ export default function PdfViewer() {
                 height="100%"
                 style={{ border: 'none' }}
             />
-            <a href="/demo.pdf" id="enlaceDescargarPdf" download="demo.pdf">
+            <a href="/demo-2.pdf" id="enlaceDescargarPdf" download="demo-2.pdf">
                 Tu dispositivo no puede visualizar los PDF, da click aquí para descargarlo.
             </a>
         </div>
