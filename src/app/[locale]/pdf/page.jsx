@@ -22,14 +22,14 @@ export default function PdfViewer() {
         <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
             {/* Incrustar el PDF */}
             <iframe
-                src="/demo.pdf"
+                src="/demo-2.pdf"
                 width="100%"
                 height="100%"
                 style={{ border: 'none' }}
             />
             {/* Enlace para descargar el PDF */}
             <a
-                href="/demo.pdf"
+                href="/demo-2.pdf"
                 id="enlaceDescargarPdf"
                 download="demo.pdf"
                 style={{
