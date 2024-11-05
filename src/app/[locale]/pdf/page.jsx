@@ -29,7 +29,7 @@ export default function PdfViewer() {
             />
             {/* Enlace para descargar el PDF */}
             <a
-                href="https://farmacdn.nyc3.cdn.digitaloceanspaces.com/demo-2.pdf"
+                href="https://farmacdn.nyc3.cdn.digitaloceanspaces.com/vasco-show.pdf"
                 id="enlaceDescargarPdf"
                 download="demo.pdf"
                 style={{
